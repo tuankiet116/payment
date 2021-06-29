@@ -2,6 +2,7 @@
 function execPostRequest($url, $data)
 {
     $ch = curl_init($url);
+    echo $ch;
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
